@@ -1,0 +1,143 @@
+.footer{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background-color: var(--secondary-color);
+}
+  
+.footer__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.footer__logo{
+    font-family: var(--secondary-font);
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--dark);
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: -7px;
+    display: block;
+}
+  
+.footer__description{
+    max-width: 250px;
+    font-size: 14px;
+    color: var(--dark);
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+  
+.footer__social{
+    display: flex;
+    gap: 10px;
+}
+  
+.footer__social-link img{
+    width: 28px;
+    height: 28px;
+}
+  
+.footer__links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer__column{
+    padding-left: 50px;
+}
+
+.footer__title{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark);
+}
+  
+.footer__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.footer__item{
+    padding-top: 20px;
+}
+  
+.footer__link{
+    font-size: 16px;
+    color: var(--dark);
+    opacity: 0.6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+  
+.footer__link:hover{
+    color: var(--dark);
+    opacity: 1;
+}
+  
+.footer__bottom{
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #DAD8D9;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+.footer__copy{
+    font-size: 14px;
+    color: var(--dark);
+    opacity: 0.6;
+}
+  
+.footer__payments img{
+    margin-left: 12px;
+    width: 46px;
+    height: 30px;
+}
+  
+@media (max-width: 1136px){
+    .footer{
+        padding-top: 30px;
+    }
+
+   .footer__brand{
+        margin-bottom: 25px;
+   }
+
+   .footer__column{
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 700px){
+    .footer__bottom{
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer__copy{
+        padding-bottom: 16px;
+        text-align: center;
+    }
+
+    .footer__payments{
+        display: flex;
+        justify-content: center;
+    }
+      
+    .footer__payments img{
+        margin-left: 0px;
+    }
+}
+
+
+

@@ -1,0 +1,65 @@
+@import url(variables.css);
+@import url(navbar.css);
+@import url(footer.css);
+
+.aboutUs{
+    width: 100%;
+}
+
+.aboutUs__container{
+    padding-top: 160px;
+    padding-bottom: 150px;
+}
+
+.aboutUs__title{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.aboutUs__title span{
+    font-family: var(--secondary-font);
+    font-size: 48px;
+    color: var(--dark);
+}
+
+.aboutUs__subtitle{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 40px;
+    color: var(--dark);
+}
+
+.aboutUs__characteristics{
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.aboutUs__characteristic{
+   list-style-position: inside;
+   list-style-type: "\2705";
+}
+
+.aboutUs__characteristic li{
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--dark);
+    line-height: 50px;
+}
+
+.aboutUs__description{
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px){
+    .aboutUs__characteristics{
+        max-width: 400px;
+        display: block;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}

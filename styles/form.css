@@ -1,0 +1,190 @@
+@import url(variables.css);
+@import url(navbar.css);
+@import url(footer.css);
+
+.forms{
+    margin-top: 220px;
+    margin-bottom: 220px;
+    width: 100%;
+}
+
+.form__container{
+    max-width: 520px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 56px 0px #e6e6e6;
+    border-radius: 8px;
+    border: 1px solid #F2F2F2;
+    background-color: var(--main-color);
+}
+
+.form__headlines{
+    padding-top: 24px;
+}
+
+.headlines__name{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--dark);
+}
+
+.form{
+    text-align: center;
+    padding: 24px;
+}
+
+.form__input{
+    position: relative;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.form__input-duo{
+    display: flex;
+    gap: 12px;
+}
+
+.form__input input{
+    width: 100%;
+    padding: 14px 16px; 
+    border-radius: 6px;
+    border: 1px solid #E6E6E6;
+    background-color: var(--light);
+}
+
+.form__input input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 40px;
+    top: 26px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.password-toggle img {
+    width: 20px;
+    height: 20px;
+}
+
+.form__button{
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 20px;
+}
+
+.form-btn{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-color);
+    background-color: var(--dark);
+    border-radius: 43px;
+    padding: 14px;
+    transition: all 0.2s;
+}
+
+.form-btn:hover{
+    color: var(--dark);
+    background-color: var(--main-color);
+    box-shadow: 0px 0px 5px 0px #DAD8D9;
+}
+
+.form__description{
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 32px;
+}
+
+.form__description p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.form__description a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1A1A1A;
+}
+
+.form__description a:hover{
+    color: var(--dark);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.radio-btn {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.radio-btn:checked {
+    background-color: var(--dark);
+    border-color: var(--dark);
+}
+
+.radio-btn:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radio-group label {
+    padding-left: 24px;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    cursor: pointer;
+}
+
+.radio-group span{
+    position: absolute;
+    margin-top: 3px;
+}
+
+@media (max-width: 520px){
+    .form__description{
+        display: flex;
+        margin: 0 auto;
+        max-width: 220px;
+        margin-top: 0px;
+        padding-bottom: 22px;
+    }
+
+    .radio-group span{
+        max-width: 200px;
+    }
+
+    .radio-group label {
+        padding-bottom: 10px;
+    }
+}
+
