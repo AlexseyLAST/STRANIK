@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="../styles/products.css">
-    <title>STRANIK</title>
+    <title>STRANIK - Какая-то либо локация</title>
 </head>
 <body>
     <header class="header">
@@ -23,8 +23,8 @@
                             <img class="dropdown-img" src="../images/icon/dropdown.svg" alt="dropdown">
                         </a>
                         <ul class="dropdown__menu">
-                            <li><a class="link" href="Услуги-по-съемке.html">Услуги по съемке</a></li>
-                            <li><a class="link" href="Услуги-по-аренде.html">Услуги по аренде</a></li>
+                            <li><a class="link" href="servicesPage.html">Услуги по съемке</a></li>
+                            <li><a class="link" href="servicesPage.html">Услуги по аренде</a></li>
                         </ul>
                     </li>
                     <li class="nav__link dropdown">
@@ -32,9 +32,9 @@
                             <img class="dropdown-img" src="../images/icon/dropdown.svg" alt="dropdown">
                         </a>
                         <ul class="dropdown__menu">
-                            <li><a class="link" href="Уличные-локации.html">Уличные локации</a></li>
-                            <li><a class="link" href="Помещение.html">Помещение</a></li>
-                            <li><a class="link" href="Студии.html">Студии</a></li>
+                            <li><a class="link" href="locationsPage.html">Уличные локации</a></li>
+                            <li><a class="link" href="servicesPage.html">Помещение</a></li>
+                            <li><a class="link" href="servicesPage.html">Студии</a></li>
                         </ul>
                     </li>
                     <li class="nav__link"><a class="link" href="../aboutUs.html">О нас</a></li>
@@ -70,7 +70,7 @@
                 </div>
 
                 <div class="historylink">
-                    <a class="link active" href="Услуги-по-съемке.html">Услуги по съемке</a>
+                    <a class="link active" href="locationsPage.html">Какая-то либо локация</a>
                 </div>
             </div>
         </div>
@@ -88,35 +88,38 @@
                           </button>
                         </div>
                         <div class="filters__categories">
-                          <button class="filters__category-button">Операторы</button>
-                          <button class="filters__category-button">Тех персонал</button>
-                          <button class="filters__category-button">Видео под ключ</button>
-                          <button class="filters__category-button">Реклама</button>
-                          <button class="filters__category-button">Клип под ключ</button>
+                          <button class="filters__category-button">Какая-то либо локация</button>
+                          <button class="filters__category-button">Какая-то либо локация</button>
+                          <button class="filters__category-button">Какая-то либо локация</button>
+                          <button class="filters__category-button">Какая-то либо локация</button>
+                          <button class="filters__category-button">Какая-то либо локация</button>
                         </div>
                         <div class="filters__price">
-                          <span class="filters__price-label">Цена</span>
-                          <div class="filters__price-range">
-                            <input
-                              class="filters__price-slider"
-                              type="range"
-                              min="50"
-                              max="200"
-                              value="50"
-                            />
-                            <input
-                              class="filters__price-slider"
-                              type="range"
-                              min="50"
-                              max="200"
-                              value="200"
-                            />
+                            <span class="filters__price-label">Цена</span>
+                            <div class="filters__price-range">
+                              <input
+                                class="filters__price-slider"
+                                type="range"
+                                id="min-price"
+                                min="300"
+                                max="10000"
+                                value="300"
+                              />
+                              <input
+                                class="filters__price-slider"
+                                type="range"
+                                id="max-price"
+                                min="50"
+                                max="10000"
+                                value="10000"
+                              />
+                              <div class="filters__price-highlight"></div>
+                            </div>
+                            <div class="filters__price-values">
+                              <span class="filters__price-value" id="price-min">$50</span>
+                              <span class="filters__price-value" id="price-max">$200</span>
+                            </div>
                           </div>
-                          <div class="filters__price-values">
-                            <span class="filters__price-value">$50</span>
-                            <span class="filters__price-value">$200</span>
-                          </div>
-                        </div>
                         <div class="filters__apply-button">
                             <button class="filters__apply-btn">Применить фильтр</button>
                         </div>
@@ -125,7 +128,7 @@
 
                 <div class="products__main">
                     <div class="products-top">
-                        <span class="products__title">Услуги по съемке</span>
+                        <span class="products__title">Какая-то либо локация</span>
                         <div class="products-sorting">
                           <span class="products-sorting-text">Сортировать по:</span>
                           <div class="products-sorting-btn">Самые популярные <img class="products-sorting-img" src="../images/icon/dropdown.svg" alt="Dropdown">
@@ -140,14 +143,32 @@
                       </div>
 
                     <div class="catalog__blocks">
+
                         <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/vybor-lokacii-pered-tem-kak-snyat-klip.jpg" alt="T-Shirt">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
                             <div class="block__info">
-                                <span class="block__info-name">Клип под ключ</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
                                 <div class="block__info-bottom">
-                                    <span class="block__info-price">от 500$ до 5000$</span>
+                                    <div class="favorites-btn">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="catalog__block">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
+                            <div class="block__info">
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
+                                <div class="block__info-bottom">
                                     <div class="favorites-btn">
                                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -158,15 +179,122 @@
                             </div>
                             </a>
                         </div>
-        
+
                         <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/IMG_7108.jpg" alt="T-Shirt">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
                             <div class="block__info">
-                                <span class="block__info-name">Рекламный ролик</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
                                 <div class="block__info-bottom">
-                                    <span class="block__info-price">500$</span>
+                                    <div class="favorites-btn">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="catalog__block">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
+                            <div class="block__info">
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
+                                <div class="block__info-bottom">
+                                    <div class="favorites-btn">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="catalog__block">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
+                            <div class="block__info">
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
+                                <div class="block__info-bottom">
+                                    <div class="favorites-btn">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="catalog__block">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
+                            <div class="block__info">
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
+                                <div class="block__info-bottom">
+                                    <div class="favorites-btn">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        
+                        <div class="catalog__block">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
+                            <div class="block__info">
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
+                                <div class="block__info-bottom">
+                                    <div class="favorites-btn">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="catalog__block">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
+                            <div class="block__info">
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
+                                <div class="block__info-bottom">
+                                    <div class="favorites-btn">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                        <div class="catalog__block">
+                            <a href="locationsDetailPage.html" class="link">
+                            <img src="../images/skeleton2.png" alt="T-Shirt">
+                            <div class="block__info">
+                                <span class="block__info-name">Название</span>
+                                <div class="block__info-grade">Оценка: 5/5</div>
+                                <div class="block__info-bottom">
                                     <div class="favorites-btn">
                                         <svg width="30" height="30" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -178,161 +306,34 @@
                             </a>
                         </div>
         
-                        <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/main____shutterstock_572417980.fznctlqsy4ky.jpg" alt="T-Shirt">
-                            <div class="block__info">
-                                <span class="block__info-name">Кастинг массовки</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
-                                <div class="block__info-bottom">
-                                    <span class="block__info-price">300$</span>
-                                    <div class="favorites-btn">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-
-                        <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/main____shutterstock_572417980.fznctlqsy4ky.jpg" alt="T-Shirt">
-                            <div class="block__info">
-                                <span class="block__info-name">Кастинг массовки</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
-                                <div class="block__info-bottom">
-                                    <span class="block__info-price">300$</span>
-                                    <div class="favorites-btn">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-
-                        <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/main____shutterstock_572417980.fznctlqsy4ky.jpg" alt="T-Shirt">
-                            <div class="block__info">
-                                <span class="block__info-name">Кастинг массовки</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
-                                <div class="block__info-bottom">
-                                    <span class="block__info-price">300$</span>
-                                    <div class="favorites-btn">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-
-                        <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/main____shutterstock_572417980.fznctlqsy4ky.jpg" alt="T-Shirt">
-                            <div class="block__info">
-                                <span class="block__info-name">Кастинг массовки</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
-                                <div class="block__info-bottom">
-                                    <span class="block__info-price">300$</span>
-                                    <div class="favorites-btn">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-
-                        <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/main____shutterstock_572417980.fznctlqsy4ky.jpg" alt="T-Shirt">
-                            <div class="block__info">
-                                <span class="block__info-name">Кастинг массовки</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
-                                <div class="block__info-bottom">
-                                    <span class="block__info-price">300$</span>
-                                    <div class="favorites-btn">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-
-                        <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/main____shutterstock_572417980.fznctlqsy4ky.jpg" alt="T-Shirt">
-                            <div class="block__info">
-                                <span class="block__info-name">Кастинг массовки</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
-                                <div class="block__info-bottom">
-                                    <span class="block__info-price">300$</span>
-                                    <div class="favorites-btn">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
-
-                        <div class="catalog__block">
-                            <a href="../404.html" class="link">
-                            <img src="../images/main____shutterstock_572417980.fznctlqsy4ky.jpg" alt="T-Shirt">
-                            <div class="block__info">
-                                <span class="block__info-name">Кастинг массовки</span>
-                                <div class="block__info-grade">Оценка: 3.5/5</div>
-                                <div class="block__info-bottom">
-                                    <span class="block__info-price">300$</span>
-                                    <div class="favorites-btn">
-                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58983 14.4979C2.24858 10.3104 3.81608 5.52415 8.21233 4.1079C10.5248 3.36165 13.0773 3.80165 14.9998 5.2479C16.8186 3.84165 19.4648 3.36665 21.7748 4.1079C26.1711 5.52415 27.7486 10.3104 26.4086 14.4979C24.3211 21.1354 14.9998 26.2479 14.9998 26.2479C14.9998 26.2479 5.74733 21.2129 3.58983 14.4979Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M20 8.375C21.3375 8.8075 22.2825 10.0013 22.3962 11.4025" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>   
-                                    </div>
-                                </div>
-                            </div>
-                            </a>
-                        </div>
                     </div>
 
                     <nav class="pagination">
                         <button class="pagination__button pagination__button--prev">
                             <svg class="pagination__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.8327 9.99984H4.16602M4.16602 9.99984L9.99935 15.8332M4.16602 9.99984L9.99935 4.1665" stroke="black" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>  
-                             Предыдущий
+                            </svg>
+                            Предыдущий
                         </button>
+                        
                         <ul class="pagination__list">
-                          <li class="pagination__item pagination__item--active">1</li>
-                          <li class="pagination__item">2</li>
-                          <li class="pagination__item">3</li>
-                          <li class="pagination__item">...</li>
-                          <li class="pagination__item">9</li>
-                          <li class="pagination__item">10</li>
+                            <li class="pagination__item pagination__item--active">1</li>
+                            <li class="pagination__item">2</li>
+                            <li class="pagination__item">3</li>
+                            <li class="pagination__item">...</li>
+                            <li class="pagination__item">9</li>
+                            <li class="pagination__item">10</li>
                         </ul>
-                        <button class="pagination__button pagination__button--next">Следующий 
-                            <svg class="pagination__icon width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        
+                        <button class="pagination__button pagination__button--next">
+                            Следующий
+                            <svg class="pagination__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.16602 9.99984H15.8327M15.8327 9.99984L9.99935 4.1665M15.8327 9.99984L9.99935 15.8332" stroke="black" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </button>
-                      </nav>
+                    </nav>
+                    
+                    
                 </div>
             </div>
         </div>

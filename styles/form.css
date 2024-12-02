@@ -186,5 +186,24 @@
     .radio-group label {
         padding-bottom: 10px;
     }
+
+    .form__button{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form{
+        padding: 15px;
+        padding-top: 24px;
+    }
+    
+    .form__input{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .radio-group label {
+        padding-left: 12px;
+    }
 }
 

@@ -142,3 +142,81 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+
+const minPriceSlider = document.getElementById('min-price');
+const maxPriceSlider = document.getElementById('max-price');
+const minPriceDisplay = document.getElementById('price-min');
+const maxPriceDisplay = document.getElementById('price-max');
+const highlightRange = document.querySelector('.filters__price-highlight');
+
+// Минимальный зазор между ползунками
+const minGap = 5;
+
+// Обновление диапазона
+function updatePriceRange() {
+  const min = parseInt(minPriceSlider.value);
+  const max = parseInt(maxPriceSlider.value);
+  const rangeMin = parseInt(minPriceSlider.min);
+  const rangeMax = parseInt(maxPriceSlider.max);
+
+  // Убедимся, что ползунки не пересекаются
+  if (max - min <= minGap) {
+    if (event.target.id === 'min-price') {
+      minPriceSlider.value = max - minGap;
+    } else {
+      maxPriceSlider.value = min + minGap;
+    }
+  }
+
+  // Обновление отображаемых значений
+  minPriceDisplay.textContent = `$${minPriceSlider.value}`;
+  maxPriceDisplay.textContent = `$${maxPriceSlider.value}`;
+
+  // Обновление позиции цветной полоски
+  const minPercent = ((minPriceSlider.value - rangeMin) / (rangeMax - rangeMin)) * 100;
+  const maxPercent = ((maxPriceSlider.value - rangeMin) / (rangeMax - rangeMin)) * 100;
+
+  highlightRange.style.left = `${minPercent}%`;
+  highlightRange.style.width = `${maxPercent - minPercent}%`;
+}
+
+// События обновления
+minPriceSlider.addEventListener('input', updatePriceRange);
+maxPriceSlider.addEventListener('input', updatePriceRange);
+
+// Инициализация
+updatePriceRange();
+
+
+window.addEventListener('resize', adjustPaginationLayout);
+adjustPaginationLayout();  // Initial check when the page loads
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   function adjustPaginationLayout() {
+//       const pagination = document.querySelector('.pagination');
+//       const list = document.querySelector('.pagination__list');
+//       const prevButton = document.querySelector('.pagination__button--prev');
+//       const nextButton = document.querySelector('.pagination__button--next');
+
+//       if (window.innerWidth <= 768) {
+//           pagination.style.flexDirection = 'column'; // Меняем на вертикальное расположение
+//           prevButton.style.order = -1; // Кнопка "Предыдущий" сверху
+//           nextButton.style.order = 1; // Кнопка "Следующий" снизу
+//           list.style.order = 0; // Список страниц между кнопками
+//       } else {
+//           pagination.style.flexDirection = 'row'; // Горизонтальное расположение на больших экранах
+//           prevButton.style.order = 0; // Кнопка "Предыдущий" слева
+//           nextButton.style.order = 2; // Кнопка "Следующий" справа
+//           list.style.order = 1; // Список страниц между кнопками
+//       }
+//   }
+
+//   // Вызов функции для первоначальной настройки
+//   adjustPaginationLayout();
+  
+//   // Отслеживание изменений размера экрана
+//   window.addEventListener('resize', adjustPaginationLayout);
+// });
